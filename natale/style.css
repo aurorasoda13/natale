@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* Aggiungi qui il percorso della tua immagine di sfondo */
+    background-image: url('sfondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+.gift-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.gift {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Dimensioni ridotte delle immagini dei regali */
+.gift img {
+    width: 150px; 
+    height: auto;
+    display: block;
+}
+
+.gift:hover {
+    transform: scale(1.05);
+}
+
+.hidden { display: none; }
+
+#letter-page {
+    /* Senza sfondo bianco, solo testo e bottone */
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+#letter-text {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.back-btn {
+    margin-top: 30px;
+    background: none;
+    border: none;
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Stile per il contenitore del bottone extra */
+.extra-button-container {
+    margin-top: 50px; /* Spazio tra i pacchi e il bottone */
+    display: flex;
+    justify-content: center;
+}
+
+/* Nota: il bottone userà già la classe .btn che abbiamo definito prima, 
+quindi avrà lo stesso aspetto degli altri bottoni nel sito. */
+.gift-img {
+    height: 220px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+
+.gift-img:hover {
+    transform: scale(1.08);
+}
+.gift-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* CENTRA IN ALTEZZA */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.shop-layout {
+    display: flex;
+    justify-content: flex-end; /* ALLINEA A DESTRA */
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 40px;
+    padding-right: 40px; /* spazio dal bordo destro */
+}
+
+
+
+/* colonna sinistra */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* colonna destra */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* immagine scaricabile */
+.download-img {
+    height: 100%;
+    max-height: 480px; /* stessa altezza delle due righe */
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.download-img:hover {
+    transform: scale(1.05);
+}

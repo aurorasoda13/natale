@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendi il tuo Regalo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-container">
+        <h1>Prendi il tuo Regalo!</h1>
+        <div class="gift-container">
+            <div class="gift" onclick="openGift('white')"><img src="paccobianco.png" alt="Bianco">Romeo</div>
+            <div class="gift" onclick="openGift('cyan')"><img src="paccociano.png" alt="Ciano">Rob</div>
+            <div class="gift" onclick="openGift('yellow')"><img src="paccogiallo.png" alt="Giallo">Orazio</div>
+        </div>
+        <div id="main-container">
+    
+
+    <div class="extra-button-container">
+        <a href="https://mega.nz/file/itBHCDhZ#bbfZW-bseEr6zoEAmF3dpc9_IX1XSgd1Dqct-xm6eEc" target="_blank" class="btn">Cliccami per la surprise!</a>
+    </div>
+</div>
+    </div>
+
+    <div id="letter-page" class="hidden">
+        <div class="letter-content">
+            <p id="letter-text"></p>
+            <a id="external-link" href="#" target="_blank" class="btn">Clicca qui</a>
+            <br>
+            <button onclick="location.reload()" class="back-btn">Torna indietro</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
