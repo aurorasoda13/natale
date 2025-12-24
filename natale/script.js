@@ -1,7 +1,7 @@
 const data = {
     white: {
         text: "Ehy Romeo, so che il Natale non è il tuo periodo preferito dell'anno ma spero che, insieme a noi, tu possa creare dei ricordi nuovi. Ricordi migliori di ciò che il passato ha riservato per te. Ti Amo Anima. Buon Natale",
-        link: "https://mega.nz/file/WlwnVbKJ#AsGAxemLhIgdLfGanl5DHE_4JDDdt8reriAMyV2RMpw"
+        link: "https://hopp.bio/aurora-soda"
     },
     cyan: {
         text: "Ei Rob, ultimamente non ho dato il meglio di me ma che questo regalo sia il primo di tanti, non solo nelle feste, ma sempre. Spero che la mia presenza possa essere un regalo migliore di ciò che è stata fin'ora. Ti amo. Buon Natale.",
@@ -21,4 +21,5 @@ function openGift(color) {
     
     document.getElementById('letter-text').innerText = data[color].text;
     document.getElementById('external-link').href = data[color].link;
+
 }
